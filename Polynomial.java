@@ -49,10 +49,10 @@ public class Polynomial {
         double out = 0;
 
         for (int i = 0; i < this.coefficients.length; i++) {
-            out += this.coefficients[i] * (Math.pow(x, i));
+            out += this.coefficients[i] * Math.pow(x, i);
         }
 
-        return  out;
+        return out;
     }
 
     public boolean hasRoot(double x) {
